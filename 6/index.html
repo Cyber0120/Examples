@@ -33,15 +33,17 @@
     <p>Butona tıklandığında sayfadaki herşeyi gizler.</p>
     <button onclick="document.getElementById('body').style.display = 'none'">Herşeyi gizle</button>
     <br><br><br>
-    <p id="test2">Burada yazan yazı asla gözükmez çünkü JavaScript içinde burada Merhaba JavaScript yazması şeklinde ayarlandı.</p>
+    <p id="test2">Burada yazan yazı asla gözükmez çünkü JavaScript içinde burada Merhaba JavaScript yazması şeklinde
+        ayarlandı.</p>
     <script>
         document.getElementById("test2").innerHTML = "Merhaba JavaScript"
     </script>
     <br><br><br>
-    <p id="test3">6.js dosyasını head kısmında script etiketi ile htmlye köprü oluşturduk. Kod satırında yazan test adlı function ile alttaki butona basıldığında bu paragraf değişecek.</p>
-    <button type="button" onclick="test3()">Buraya tıkla!</button>
+    <p id="test3">6.js dosyasını head kısmında script etiketi ile htmlye köprü oluşturduk. Kod satırında yazan test adlı
+        function ile alttaki butona basıldığında bu paragraf değişecek.</p>
+    <button type="button" onclick='test3()'>Buraya tıkla!</button>
     <p id="test4">Butona tıklandığında bu paragraf değişecek ve kırmızı renk olucak.</p>
-    <button style="button" onclick="test4()">Buraya tıkla!</button>
+    <button style="button" onclick='test4()'>Buraya tıkla!</button>
 </body>
 
 </html>
