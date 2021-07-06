@@ -1,0 +1,16 @@
+.yazires{
+    background: black;
+    overflow: hidden;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -11px;
+    line-height: 10px;
+    background: url("1-çerçeveli.jpg");
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: rgba(255,255,255,0);
+    background-size: 70vh;
+    background-position: center;
+}
