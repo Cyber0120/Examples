@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<style>
+    body{
+        margin: 3%;
+    }
+</style>
+<body>
+    <h2 id="test1" style="display: none;">Gizli yazı</h2>
+    <button onclick="document.getElementById('test1').style.display='block';">
+        <h3>Bana Tıkla!</h3>
+    </button>
+    <h2>Js ile aşağıya 5 + 6 'nın sonucu yazılacak</h2>
+    <p id="test2"></p>
+    <script>
+        document.getElementById('test2').innerHTML = 5 + 6;
+    </script>
+    <p>Aşağıya 5 + 6 'nın sonucu document.write ile yazıldı'</p>
+    <script>document.write(5 + 6)</script>
+    <br><br><br>
+    <button style="color: red;font-size: xx-large;" onclick="document.write(5 + 6)"><strong>Tüm sayfayı sil ve 5 + 6'nın sonucunu yaz</strong></button>
+    <br><br><br>
+    <button style="font-size: xx-large;" onclick="window.alert(5 + 6)">11 window.alert</button>
+    <br><br>
+    <button style="font-size: xx-large;" onclick="alert(5 + 6)">11 alert</button>
+    <br><br>
+    <button style="font-size: xx-large;" onclick="console.log(5 + 6)">11 console.log</button>
+    <br><br>
+    <button style="font-size: xx-large;" onclick="window.print()">Bu sayfayı yazdır</button>
+    <br><br><br>
+    <p id="test3" style="font-size: xx-large;"></p>
+    <script>
+        let a, b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        document.getElementById("test3").innerHTML = c;
+        </script>
+    <script src="2.js"></script>
+</body>
+
+</html>
