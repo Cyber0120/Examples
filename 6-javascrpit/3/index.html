@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="3.js"></script>
+    <title>3</title>
+</head>
+<style>
+    p{
+        font-size: 160%;
+    }
+</style>
+<body>
+    <h1>JavaScrpit Örnekleri</h1>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+    <p id="8"></p>
+    <p id="9"></p>
+    <p id="10"></p>
+    <p id="11"></p>
+    <p id="12"></p>
+    <p id="13"></p>
+    <p id="14"></p>
+    <p id="15"></p>
+    <p id="16"></p>
+    <p id="17"></p>
+    <p id="18"></p>
+    <p id="19"></p>
+    <p id="20"></p>
+    <p id="21"></p>
+    <p id="22"></p>
+    <p id="23"></p>
+    <p id="24"></p>
+    <p id="25"></p>
+    <p id="26"></p>
+    <p id="27"></p>
+    <p id="28"></p>
+    <p id="29"></p>
+    <br><br><br><br><br><br><br><br><br><br>
+    <script>
+        //
+    document.getElementById("1").innerHTML = 10.50;
+    document.getElementById("2").innerHTML = "CYBER";
+    //
+    let x;
+    x = 1;
+    document.getElementById("3").innerHTML = x;
+    //
+    document.getElementById("4").innerHTML = (5 + 6) * 10;
+    //
+    let z, y;
+    z = 5;
+    y = 6;
+    document.getElementById("5").innerHTML = z * y;
+    document.getElementById("6").innerHTML = z + y;
+    //
+    document.getElementById("7").innerHTML = "Sait" + " " + "Selçuk";
+    //
+    document.getElementById("8").innerHTML = "Sait" + " Furkan " + "Selçuk"; // Boşluklu
+    //
+    let c, v;
+    c = 5 + 5;
+    v = c * 10;
+    document.getElementById("9").innerHTML = v;
+    //
+    var b, n;                                   // var
+    b = 5 + 5;                                  // kullanıldı
+    n = b * 10;                                 // CYBER
+    document.getElementById("10").innerHTML = n;
+    //javascrpit küçü ve büyük harflere duyarlıdır.
+    let isim, İsim;
+    isim = "Sait";
+    İsim = "Furkan";
+    document.getElementById("11").innerHTML = isim + " (isim)" + " " + İsim + " (İsim)";
+    //
+    var pi = 22/7;
+    var kişi = "CYBER";
+    var cevap = "Evet benim!"
+    document.getElementById("12").innerHTML = pi + "<br>" + kişi + "<br>" + cevap;
+    //
+    var carName = "Volvo";
+    document.getElementById("13").innerHTML = carName;
+    //Alttaki örnekte carname deki n harfi küçük yazılmııştır. JavaScript küçük ve büyük harfe duyarlıdır.
+    var kişi2 = "Sait Furkan",
+    carname = "Audi",
+    fiyat = 200;
+    document.getElementById("14").innerHTML = kişi2 + " " + carname + " " + fiyat 
+    //
+    var boş;
+    document.getElementById("15").innerHTML = boş;
+    //
+    var m = 5 + 2 + 3;
+    document.getElementById("16").innerHTML = m;
+    //
+    var a = "Sait" + " " + "Selçuk";
+    document.getElementById("17").innerHTML = a;
+    //Bir sayıyı tırnak içine alırsanız, sayıların geri kalanı dize olarak değerlendirilir ve birleştirilir.
+    var s = "5" + 2 + 3;    //523
+    var d = 5 + "2" + 3;    //523
+    var f = 5 + 2 + "3";    //73 (ilk 2 sayıyı topladı)
+    var sd = "5" + 2 + 3 + 10;  //52310
+    var sf = 5 + 2 + "3" + 10;  //7310 (ilk 2 sayıyı topladı)
+    document.getElementById("18").innerHTML = s + "<br>" + d + "<br>" + f + "<br>" + sd + "<br>" + sf;
+    </script>
+</body>
+</html>
