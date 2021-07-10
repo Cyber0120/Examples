@@ -102,12 +102,26 @@
     var a = "Sait" + " " + "Selçuk";
     document.getElementById("17").innerHTML = a;
     //Bir sayıyı tırnak içine alırsanız, sayıların geri kalanı dize olarak değerlendirilir ve birleştirilir.
+    // Aşağıda yapılan örneklere göre ilk iki sayıdan sonra koyulan tırnak işaretiyle ondan önceki sayıları topluyor ama kendisi ( tırnak içinde olan yazı) ve sornasını aynı şekilde yazıyor, işleme dahil olmuyorlar.
     var s = "5" + 2 + 3;    //523
     var d = 5 + "2" + 3;    //523
     var f = 5 + 2 + "3";    //73 (ilk 2 sayıyı topladı)
     var sd = "5" + 2 + 3 + 10;  //52310
     var sf = 5 + 2 + "3" + 10;  //7310 (ilk 2 sayıyı topladı)
-    document.getElementById("18").innerHTML = s + "<br>" + d + "<br>" + f + "<br>" + sd + "<br>" + sf;
+    var df = 5 + 2 + 3 + "10";  //1010 (İlk 3 sayıyı topladı)
+    document.getElementById("18").innerHTML = s + "<br>" + d + "<br>" + f + "<br>" + sd + "<br>" + sf + "<br>" + df;
+    //$ dolar işareti sol alt tuşu + 4 ( klavye üzerinde bulunan) ile yapılıyor.
+    var $$$ = "Merhaba Dünya";
+    var $ = -2;
+    var $param = $ + 5;
+    document.getElementById("19").innerHTML = $$$ + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + $param;
+    //_ alt çizgi
+    var _$$$ = "CYBER";
+    var _$ = 2;
+    var _$param = _$ + 5;
+    document.getElementById("20").innerHTML = _$$$ + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + _$param;
+    //
+    
     </script>
 </body>
 </html>
