@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="4.js"></script>
+    <title>4</title>
+</head>
+
+<body>
+    <!-- <p id="test1"></p>
+    <button onclick="test1()">button</button> -->
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+    <p id="8"></p>
+    <script>
+        /* let süslü parantez dışına çıkamaz. (Kodda hata var yada ben yanlış yazdım neyse...)
+        {
+            let x = 2;
+        }
+        document.getElementById("1").innerHTML = x;
+        {
+            var y = 5;
+        }
+        document.getElementById("2").innerHTML = y;
+        */
+        // var parantez dışına çıkabilir.
+        var a = 10;
+        {
+            var a = 5;
+        }
+        document.getElementById("3").innerHTML = a;
+        // let parantez dışıan çıkamaz.
+        let a2 = 100;
+        {
+            let a2 = 50;
+        }
+        document.getElementById("4").innerHTML = a2;
+        // var Bir programda herhangi bir yerde bir JavaScript değişkeninin yeniden bildirilmesine izin verilir.
+        var a4 = 3;
+        var a4 = 10;
+        document.getElementById("5").innerHTML = a4;
+        // let izin vermez.
+        /* var v1 = 2;   // kabul
+         let v1 = 5;     // ret
+         let l1 = 10;    // kabul
+         let l1 = 200;   // ret
+         let v2 = 100;   // kabul
+         var v2 = 500;   // ret
+         document.getElementById("6").innerHTML = v1;
+         document.getElementById("7").innerHTML = v1;
+         document.getElementById("8").innerHTML = l1;
+         document.getElementById("9").innerHTML = l1;
+         document.getElementById("10").innerHTML = v2;
+         document.getElementById("11").innerHTML = v2;
+         */
+        // let başak bir bloktaysa yeniden bildirmeye izin verir.
+        // innerhtml kullanıldığında 1 yazar çünkü let süslü parantez dışına bildirme yapamaz.
+        let l2 = 1;
+        {
+            let l2 = 2;
+        }
+        {
+            let l2 = 3;
+        }
+        document.getElementById("6").innerHTML = l2;
+        // var ile nick kısmını değişterbilirsin.
+        nick = "CYBER";
+        document.getElementById("7").innerHTML = nick;
+        var nick;
+        // let kullanılırsa, let dışarıya değiştirme izni vermediği için ekranda yazan Destroyer yazısı silinir.
+        nick2 = "Destroyer";
+        document.getElementById("8").innerHTML = nick2;
+        let nick2 = "Destroyer";
+    </script>
+</body>
+
+</html>
