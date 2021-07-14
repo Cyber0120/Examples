@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>11</title>
+</head>
+
+<body data-theme="">
+    <div class="main">
+        <div class="calculator">
+            <div class="header">
+                <div class="switchBox">
+                    <input type="checkbox" id="switch" class="switch" name="" value="switch">
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="input">
+                <input type="text" id="display" name="" disabled>
+                <input type="button" class="cancle_btn" value="C">
+            </div>
+            <div class="row">
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="+">
+            </div>
+            <div class="row">
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="-">
+            </div>
+            <div class="row">
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="*">
+            </div>
+            <div class="row">
+                <input type="button" style="border-radius: 0 0 0 18px;" value=".">
+                <input type="button" value="0">
+                <input type="button" style="background: #542e71; color: white;" value="=">
+                <input type="button" style="border-radius: 0 0 18px 0;" value="/">
+            </div>
+        </div>
+    </div>
+    <script>
+        const switchbtn = document.getElementById("switch");
+        const display = document.getElementById("display");
+        const input = document.querySelectorAll("input");
+        let value = "";
+        switchbtn.addEventListener("click", () => {
+            if (switchbtn.checked == true) {
+                document.body.setAttribute("data-theme", "dark");
+            }
+            else {
+                document.body.setAttribute("data-theme", "");
+            }
+        });
+        input.forEach((e)=>{
+            e.addEventListener("click", (event)=>{
+                if(event.target.value == "="){
+                    if(value.length != 0){
+                        let newval = eval(value);
+                        value = newval;
+                        display.value = value;
+                    }}
+                else if(event.target.value == 'C'){
+                    value = "";
+                    display.value = value;
+                }
+                else if(event.target.value == "switch"){}
+                else{
+                    value += envet.target.value;
+                    display.value = value
+                }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
