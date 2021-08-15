@@ -192,7 +192,8 @@ header #toggle:after {
     .banner h2 {
         font-size: 1.8em;
     }
-    .banner .content p, .banner .content a {
+    .banner .content p,
+    .banner .content a {
         font-size: 1em;
     }
     .banner.active {
@@ -211,7 +212,7 @@ header #toggle:after {
         right: initial;
         flex-direction: row;
     }
-    .sci li a{
+    .sci li a {
         margin: initial;
         margin-right: 10px;
     }
