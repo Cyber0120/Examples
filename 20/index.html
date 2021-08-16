@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <script src="navbar.js"></script>
+    <title>20</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navcontainer">
+            <p class="logo">logo</p>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Login</li>
+                <li class="active">Signup</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="section1">Content 1</section>
+        <section class="section2">Content 2</section>
+        <section class="section3">Content 3</section>
+    </main>
+    <script>
+        const navbar = document.querySelector(".navcontainer");
+const logo = document.querySelector(".logo");
+window.onscroll = () => {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.style.height = "60px";
+        navbar.style.fontSize = "14px";
+        logo.classList.add("logo-small");
+    }
+    else {
+        navbar.style.height = "100px";
+        navbar.style.fontSize = "16px";
+        logo.classList.remvoe("logo-small");
+    }
+}
+    </script>
+</body>
+
+</html>
