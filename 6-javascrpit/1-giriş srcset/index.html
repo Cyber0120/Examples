@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="6.js"></script>
+    <title>1</title>
+</head>
+<style>
+    body {
+        font-size: 150%;
+        padding: 0 2% 5% 2%;
+    }
+</style>
+
+<body id="body">
+    <h1>JavaScript #1</h1>
+    <p id="test1">Butona basıldığında buradaki yazı değişecek</p>
+    <button type="button"
+        onclick='document.getElementById("test1").innerHTML = "Merhaba JavaScript"'>BanaTıkla!</button>
+    <br><br><br>
+    <p>JavaScript ile img src değiştirilebilir.</p>
+    <button onclick="document.getElementById('lamres').src='lamon.gif'">Lambayı Aç</button>
+    <img id="lamres" src="lamoff.gif" alt="">
+    <button onclick="document.getElementById('lamres').src='lamoff.gif'">Lambayı Kapat</button>
+    <br><br><br>
+    <p>Butona tıklandığında sayfanın yazı rengini kırmızı yapar.</p>
+    <button onclick="document.getElementById('body').style.color = 'red'">Kırmızı</button>
+    <button onclick="document.getElementById('body').style.color = 'initial'">Normal</button>
+    <br><br><br>
+    <p>Butona tıklandığında sayfadaki herşeyi gizler.</p>
+    <button onclick="document.getElementById('body').style.display = 'none'">Herşeyi gizle</button>
+    <br><br><br>
+    <p id="test2">Burada yazan yazı asla gözükmez çünkü JavaScript içinde burada Merhaba JavaScript yazması şeklinde
+        ayarlandı.</p>
+    <script>
+        document.getElementById("test2").innerHTML = "Merhaba JavaScript"
+    </script>
+    <br><br><br>
+    <p id="test3">6.js dosyasını head kısmında script etiketi ile htmlye köprü oluşturduk. Kod satırında yazan test adlı
+        function ile alttaki butona basıldığında bu paragraf değişecek.</p>
+    <button type="button" onclick='test3()'>Buraya tıkla!</button>
+    <p id="test4">Butona tıklandığında bu paragraf değişecek ve kırmızı renk olucak.</p>
+    <button style="button" onclick='test4()'>Buraya tıkla!</button>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>12</title>
+</head>
+<body>
+    <ul class="nav">
+        <li class="slide"></li>
+        <li>
+            <a href="#" class="is-active">Anasayfa</a>
+            <li><a href="#">Servis</a></li>
+            <li><a href="#">Takım</a></li>
+            <li><a href="#">Hakkında</a></li>
+            <li><a href="#">İletişim</a></li>
+        </li>
+    </ul>
+    <script>
+        $(".nav a").on("click", function () {
+            var position =
+            $(this).parent().position();
+            var width = $(this).parent().width();
+            $(".nav a").removeClass("is-active");
+            $(this).addclass("is-active");
+            $(".nav .slide").css({
+                opacity: 1,
+                left: +position.left,
+                width: width,
+            });
+        });
+        var currentWidth =
+        $(".nav").find("li:nth-child(2)a").parent("li").width();
+        var current = $("li:nth-child(2)a").position();
+
+        $(".nav .slide").css({
+            left: +current.left,
+            width: currentWidth,
+        });
+    </script>
+</body>
+</html>

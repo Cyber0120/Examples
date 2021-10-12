@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+
+<body style="padding:1%;font-size: 200%;">
+
+    <h1>Her madde numarasındaki açıklama hemen altındaki örneğin açıklamasıdır</h1>
+    <li>accept ile hangi dosyaları kabul edileceğini seçiyorsun.</li>
+    <li>multiple ile birden fazla dosya kabul ediliyor.</li>
+    <div>
+        <h1>Sadece jpg ve png dosyaları kabul edilir</h1>
+        <input type="file" id="fileuploader" accept=".jpg," .png="" multiple="multiple">
+        <p>Çoklu Dosya</p>
+        <p id="feedback"></p>
+    </div>
+    <br><br>
+    <li>Bunu bilmiyorum öylesine koydum</li>
+    <label for="cars">Araba seç</label>
+    <select name="cars" id="cars" multiple="multiple">
+        <option value="Bmw">Bmw</option>
+        <option value="Audi">Audi</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Opel">Opel</option>
+    </select>
+    <br><br>
+    <li>contenteditable ile yazılan metni düzenleyebiliryorsun.</li>
+    <div>
+        <h1>Çalışanlar listesi</h1>
+        <ul class="content-editable" contenteditable="true">
+            <li>1. Çalışan</li>
+            <li>2. Çalışan</li>
+            <li>3. Çalışan</li>
+            <li>4. Çalışan</li>
+            <li>5. Çalışan</li>
+        </ul>
+    </div>
+    <li>download ile href deki herhangi bir şeyi(resim internet sayfası vb.)indirebilirsin. (download="Buraya Dosya
+        Adı") ile "Buraya Dosya Adı" yazan kısma indirilen dosyanın adının nasıl olmasını istediğinizi yazıyorsunuz.
+    </li>
+    <div>
+        <a href="1.html" download>Bu html sayfasını indir</a>
+    </div>
+    <br><br>
+    <li>translate="no" ile metnin çevrilmesini istediğinizi veya istemediğinizi yes(evet) veya no(hayır) olarak
+        ayarlayabiliyorsunuz.(Not: sayfa Türkçe olduğu için türkçe diline çevirmiyor chrome)
+    </li>
+    <p translate="no">Don't translate this! (Burası çevrilmez!)</p>
+    <p>This can be translated to any language.(Burası herhangi bir dile çevrilebilir)</p>
+    <br><br>
+    <li>pattern ile harf veya sayıalrı kabul edebilirsin ve uzunluğunu ayarlayabilirsin. required ile zorunlu olup
+        olmadığını ayarlayabilirsin.</li>
+    <form action="">
+        <p>Üç harfli ülke kodu!</p>
+        <label for="input">Ülke kodu:</label>
+        <input type="text" id="input" pattern="[A-Za-z]{3}" title="Üç harfli ülke kodu" required>
+        <input type="submit">
+    </form>
+    <br><br><br><br><br><br><br><br>
+</body>
+
+</html>

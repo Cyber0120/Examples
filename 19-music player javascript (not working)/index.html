@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>19</title>
+</head>
+
+<body>
+    <div class="music">
+        <h2 class="title">Music Name</h2>
+        <div class="player">
+            <audio src=""></audio>
+            <div class="btns">
+                <span class="prev">
+                    <ion-icon name="play-back-outline"></ion-icon>
+                </span>
+                <span class="playPause">
+                    <ion-icon name="play-outline"></ion-icon>
+                </span>
+                <span class="next">
+                    <ion-icon name="play-forward-outline"></ion-icon>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- Player script -->
+    <script>
+        const title = document.querySelector('.title');
+        const prev = document.querySelector('.prev');
+        const playPause = document.querySelector('.playPause');
+        const next = document.querySelector('.next');
+        const audio = document.querySelector('audio');
+        //Song list
+
+        const songList = [
+            {
+                path: "https://radyonet.net/cdn/muzik/divolly-markward-panuma-drowning-feat-darla-jade-1618311797-17.mp3",
+                songName: "Markward Panuma",
+            },
+            {
+                path: "https://radyonet.net/cdn/muzik/tanae-the-fire-of-us-1580818310-17.mp3",
+                songName: "Tanae the Fire of Us",
+            },
+            {
+                path: "https://radyonet.net/cdn/muzik/mp3indirdur-dharia-sugar-brownies-1605097065-17.mp3",
+                songName: "Dharia Sugar Brownies",
+            },
+            {
+                path: "https://radyonet.net/cdn/muzik/faruk-sabanci-ft-mariama-underground-master-1564221035-17.mp3",
+                songName: "Underground Master",
+            }
+        ];
+        let song_Playing = false;
+
+        //play song
+        function playSong(){
+            song_Playing = true;
+            audio.play();
+            playPause.classList.add('active');
+        }
+
+        //pause song
+        function pauseSong(){
+            song_Playing = false;
+            audio.pause();
+            playPause.classList.remove('active');
+        }
+
+        //play or pause song on click
+        playPause.addEventListener("click", () => (song_Playing ?
+        pauseSong() : playSong()));
+
+        //load song
+        function loadSong(songList){
+            title.textContent = songList.songName;
+            audio.src = songList.path;
+        }
+
+        //current song
+        let i = 0;
+
+        //on load - select second song from song list
+    </script>
+    <!-- İcon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

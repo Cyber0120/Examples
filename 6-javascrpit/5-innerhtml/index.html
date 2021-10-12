@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<style>
+    body {
+        font-size: 175%;
+    }
+</style>
+
+<body>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+    <p id="8"></p>
+    <p id="9"></p>
+    <p id="10"></p>
+    <p id="11"></p>
+    <p id="12"></p>
+    <p id="13"></p>
+    <p id="14"></p>
+    <p id="15"></p>
+    <p id="16"></p>
+    <p id="17"></p>
+    <p id="18"></p>
+    <p id="19"></p>
+    <p id="20"></p>
+    <p id="21"></p>
+    <p id="22"></p>
+    <p id="23"></p>
+    <p id="24"></p>
+    <p id="25"></p>
+    <p id="26"></p>
+    <p id="27"></p>
+    <p id="28"></p>
+    <p id="29"></p>
+    <p id="30"></p>
+    <p id="31"></p>
+    <p id="32"></p>
+    <p id="33"></p>
+    <p id="34"></p>
+    <p id="35"></p>
+    <p id="36"></p>
+    <p id="37"></p>
+    <p id="38"></p>
+    <p id="39"></p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script>
+
+        // const değerler sabittir.
+        const araba1 = ["Tofaş", "Volvo", "Bmw"];
+        //araba1 = ["Toyota", "Audi", "Tofaş"] hata verrir çünkü const değeri değiştirilemez.
+        araba1[0] = "Toyota";
+        araba1.push("Audi");
+        document.getElementById("1").innerHTML = araba1;
+        // Bu çalışır.
+        const araba2 = { marka: "Bmw", yılı: "2021", renk: "Siyah" }
+        araba2.renk = "Kırmızı";
+        araba2.sahip = "Sait Furkan";
+        document.getElementById("2").innerHTML = "Araba Sahibi: " + araba2.sahip + "<br>" +
+            "Marka: " + araba2.marka + "<br>" +
+            "Model Yılı: " + araba2.yılı + "<br>" +
+            "Rengi: " + araba2.renk + "<br>";
+        alert(araba2.sahip + " (Satır = 48)")
+        /* Ama bu çalışmaz.
+        const araba3 = {marka:"Bmw", yılı:"2021", renk:"Siyah"};
+        araba3 = {marka:"Toyota", yılı:"1874", renk:"Beyaz"}
+        */
+        // const ve let benzerdir.
+        const s1 = 19; // Burada 19
+        {
+            const s1 = 9; // Burada 9
+        } //Süsülü parantez dışında tekrar 19
+        document.getElementById("3").innerHTML = s1;
+        // var Bir programda herhangi bir yerde bir JavaScript değişkeninin yeniden bildirilmesine izin verilir.
+        var s2 = 2;     // Kabul
+        var s2 = 3;     // Kabul
+        s2 = 4;         // Kabul
+        /* Var olan var veya let değişkenin const aynı kapsamda yeniden bildirilmesine izin verilmez.
+        var s3 = 2;     // Kabul
+        const s3 = 2;   // Ret
+
+        {
+            let s3 = 2;     // Kabul
+            const s3 = 2;   // Ret
+        }
+
+        {
+            const s3 = 2;   // Kabul
+            const s3 = 2;   // Ret
+        }
+        */
+        /* const Aynı kapsamda mevcut bir değişkeni yeniden atamaya izin verilmez.
+        const x = 2;     // Kabul
+        x = 2;           // Ret
+        var x = 2;       // Ret
+        let x = 2;       // Ret
+        const x = 2;     // Ret
+
+        {
+            const x = 2;   // Kabul
+            x = 2;         // Ret
+            var x = 2;     // Ret
+            let x = 2;     // Ret
+            const x = 2;   // Ret
+        }
+        */
+        /* const Başka bir kapsamda veya başka bir blokta, ile bir değişkenin yeniden bildirilmesine izin verilir.
+        const x = 2;       // Kabul
+
+        {
+            const x = 3;   // Kabul
+        }
+
+        {
+            const x = 4;   // Kabul
+        }
+        */
+        $asd = "CYBER";
+        document.getElementById("4").innerHTML = $asd;
+        var $asd;
+        //
+        try {
+            alert(carName);
+            const carName = "Volvo";
+        }
+        catch (err) {
+            document.getElementById("5").innerHTML = err;
+        }
+        //
+        let t1 = "Ne güzel ";
+        t1 += "bir gün.";
+        document.getElementById("6").innerHTML = t1;
+        //
+        let s42 = 5;
+        s42++;
+        let s323 = s42;
+        document.getElementById("7").innerHTML = s42;
+        s42--;
+        document.getElementById("8").innerHTML = s42;
+        let s43 = s42 ** 2;
+        document.getElementById("9").innerHTML = s43;
+        document.getElementById("10").innerHTML = Math.pow(s43, 2);
+        // 
+        let s6 = 10;
+        s6 += 5;
+        document.getElementById("11").innerHTML = s6;
+        s6 -= 6;
+        document.getElementById("12").innerHTML = s6;
+        s6 *= 10;
+        document.getElementById("13").innerHTML = s6;
+        s6 /= 9;
+        document.getElementById("14").innerHTML = s6;
+        s6 %= 5;
+        document.getElementById("15").innerHTML = s6;
+        //
+        let v1 = 16 + " Volvo";
+        document.getElementById("16").innerHTML = v1;
+        v1 = "Volvo " + 16;
+        document.getElementById("17").innerHTML = v1;
+        v1 = 16 + 4 + " Volvo";
+        document.getElementById("18").innerHTML = v1;
+        v1 = " Volvo " + 16 + 4;
+        document.getElementById("19").innerHTML = v1;
+        //
+        let v2;
+        document.getElementById("20").innerHTML = v2;
+        v2 = 3.14;
+        document.getElementById("21").innerHTML = v2;
+        v2 = "Cyber";
+        document.getElementById("22").innerHTML = v2;
+        //
+        let v3c1 = "Volvo Bmw-1";
+        let v3c2 = "Volvo Bmw-2";
+        document.getElementById("23").innerHTML = v3c1 + "<br>" + v3c2;
+        //
+        let v4a1 = "Tamam";
+        let v4a2 = "Tamam 'baba'";
+        let v4a3 = 'Tama "baba"';
+        document.getElementById("24").innerHTML = v4a1 + "<br>" + v4a2 + "<br>" + v4a3;
+        //
+        let v5d1 = 34.0595;
+        let v5d2 = 34;
+        document.getElementById("25").innerHTML = v5d1 + "<br>" + v5d2;
+        let v5s1 = 123e5;
+        let v5s2 = 123e-5;
+        document.getElementById("26").innerHTML = v5s1 + "<br>" + v5s2;
+        //
+        let v6b1 = 5;
+        let v6b2 = 5;
+        let v6b3 = 6;
+        document.getElementById("27").innerHTML = (v6b1 == v6b2) + "<br>" + (v6b2 == v6b3);
+        //
+        const v7a1 = ["Volvo", "Bmw", "Audi"]
+        document.getElementById("28").innerHTML = v7a1[0] + "<br>" + v7a1[1] + "<br>" + v7a1[2] + "<br>" + v7a1[3];
+        //
+        const v8k1 = {
+            isim2 : "Sait",
+            soyisim2 : "Selçuk",
+            yas : 19,
+            gzngi8 : "kahverengi"
+        };
+        document.getElementById("29").innerHTML = v8k1.isim2 + ", " + v8k1.yas + " yaşında.";
+        //
+        document.getElementById("30").innerHTML = 
+        typeof v1 + "<br>" +
+        typeof v2 + "<br>" +
+        typeof v3c1 + "<br>" +
+        typeof v5d1 + "<br>" +
+        typeof v6b1 + "<br>" +
+        typeof v7d1 + "<br>" +
+        typeof v7a1 + "<br>" +
+        typeof v8k1;
+        //
+        v6b1 = undefined;
+        document.getElementById("31").innerHTML = v6b1 + "<br>" + typeof v6b1;
+    </script>
+</body>
+
+</html>

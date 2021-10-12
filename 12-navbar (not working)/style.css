@@ -1,0 +1,37 @@
+.nav {
+    position: relative;
+    border: none;
+    display: flex;
+    list-style-type: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav li {
+    margin: 0;
+}
+
+.nav li a {
+    position: relative;
+    padding: 10px 36px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #999;
+    display: inline-flex;
+    z-index: 3;
+}
+
+.nav li a.i-active {
+    color: #000;
+}
+.nav .slide{
+    position: absolute;
+    display: inline-flex;
+    height: 5px;
+    bottom: 5px;
+    transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1.05);
+    z-index: 2;
+    background-color: #623be4;
+}

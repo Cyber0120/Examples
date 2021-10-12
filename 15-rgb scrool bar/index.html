@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>15</title>
+</head>
+
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <h2>Creative Scrool Progress Bar</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis,
+            necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas
+            dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis,
+            necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas
+            dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis,
+            necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas
+            dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis,
+            necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas
+            dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis, necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis, necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis, necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis, necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis, necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis, necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis, necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas dolores amet!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dicta deleniti odio inventore. Perferendis, necessitatibus eos ullam sit soluta officiis dolorem nemo doloremque! Quidem non consequuntur dolorem quas dolores amet!
+        </p>
+    </section>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.scroll = function() {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            prgoress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+
+</html>
